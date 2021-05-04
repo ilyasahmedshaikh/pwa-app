@@ -1,0 +1,40 @@
+.top-bar{
+  background-color: black;
+  padding: 10px 0;
+}
+
+.top-bar h4{
+  margin: 0;
+}
+
+.top-bar select{
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  padding: 5px 5px 5px 5px;
+  font-size: 7px;
+  background-color: #750b1cab;
+  color: white;
+}
+
+.top-bar option{
+  font-size: 7px;
+}
+
+
+
+
+.container{
+  padding: 0 20px;
+}
+
+
+/* @media screen and (max-width: 768px)
+{
+
+}
+
+@media screen and (max-width: 600px)
+{
+
+} */
