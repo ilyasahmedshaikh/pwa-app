@@ -1,40 +1,98 @@
 .top-bar{
   background-color: black;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .top-bar h4{
   margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 30px;
 }
 
 .top-bar select{
   position: absolute;
-  top: 18px;
-  right: 25px;
-  padding: 5px 5px 5px 5px;
-  font-size: 7px;
-  background-color: #750b1cab;
-  color: white;
+  top: 17px;
+  right: 24px;
+  padding: 6px 8px 6px 8px;
+  font-size: 13px;
+  color: black;
+  cursor: pointer;
 }
 
-.top-bar option{
-  font-size: 7px;
+.top-bar select option{
+  font-size: 13px;
 }
 
+.paragraph{
+  padding: 20px 0;
+}
 
+.paragraph h2{
 
+}
+
+.light-blue{
+  background-image: url(../assets/img/lightblue.jpg);
+  width: 100%;
+  height: 84vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.light-gold{
+  background-image: url(../assets/img/lightgold.jpg);
+  width: 100%;
+  height: 84vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .container{
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
-
-/* @media screen and (max-width: 768px)
+@media screen and (max-width: 1920px)
 {
 
+}
+
+@media screen and (max-width: 768px)
+{
+  .light-blue{
+    height: 87vh;
+  }
+
+  .light-gold{
+    height: 87vh;
+  }
 }
 
 @media screen and (max-width: 600px)
 {
+  .top-bar h4{
+    text-align: unset;
+  }
 
-} */
+  .paragraph{
+    padding: 25px 0;
+  }
+
+  .paragraph h2{
+    margin-top: 0;
+  }
+
+  .light-blue{
+    height: 85vh;
+  }
+
+  .light-gold{
+    height: 85vh;
+  }
+
+  .container{
+    padding: 0 20px;
+  }
+}

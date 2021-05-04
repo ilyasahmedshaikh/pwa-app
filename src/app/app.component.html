@@ -2,10 +2,22 @@
   <div class="top-bar">
     <div class="container">
       <h4>John Semth</h4>
-      <select>
-        <option>Light Blue</option>
-        <option>Light Gold</option>
+      <select (change)="select($event)">
+        <option value="0">Choose Color</option>
+        <option value="1">Light Blue</option>
+        <option value="2">Light Gold</option>
       </select>
     </div>
   </div>
 </header>
+
+<section>
+  <div class="paragraph" [ngClass]="{'light-blue': option == 1, 'light-gold': option == 2}">
+    <div class="container">
+      <h2>How it works PWA</h2>
+      <p>Simply put, a PWA is a website with all the benefits of an app. PWAs give you a faster, more reliable, and more engaging version of your website or eCommerce store. PWAs can do most things that native apps can do, like having an offline mode, accessing your camera and microphone if necessary, GPS, and more. Imagine a user browsing your online store with instant page loading speeds whilst flying at 35,000ft or using the subway—​and knowing once they get back online their order will be processed automatically!</p>
+      <p>Progressive Web Apps, aka PWAs, are the best way for developers to make their webapps load faster and more performant. In a nutshell, PWAs are websites that use recent web standards to allow for installation on a user’s computer or device, and deliver an app-like experience to those users. Twitter recently launched mobile.twitter.com as a PWA built with React and Node.js. They've had a good experience with PWA.</p>
+      <p>Adding PWA support is important so people with slow connections and affordable smart phones can use your webapp more easily. If your app is large and you can't load parts of it lazily (meaning loading it on-demand rather than at the beginning), bundling it all up in a hybrid app with Cordova might make sense. If your app does intense tasks or is highly interactive (like a game), coding it with native SDKs is likely a good option.</p>
+    </div>
+  </div>
+</section>

@@ -7,11 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pwa-app';
+  option: any = 1;
 
   constructor(){}
 
   ngOnInit() {
-    console.log('init');
+  }
+
+  select(event: any) {
+    this.option = event.target.value;
   }
 
 }
