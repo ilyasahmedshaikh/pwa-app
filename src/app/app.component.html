@@ -22,6 +22,11 @@
   </div>
 </section>
 
-<button *ngIf="Pwa.promptEvent" (click)="installPwa()">
-  Install
-</button>
+<div class="pwa-install-prompt" *ngIf="Pwa.promptEvent">
+  <div>
+    <p>Install App?</p>
+  </div>
+  <button (click)="installPwa()">
+    Install
+  </button>
+</div>
